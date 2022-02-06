@@ -21,6 +21,8 @@
 
 - nuxt.config.js에서 보고있던 경로가 아닌 scss폴더로 varialbes.scss를 옮겼으므로
 
+nuxt.config.js
+
 ```swift
 vuetify: {
     customVariables: ['~/assets/scss/variables.scss'], // 이부분 scss 폴더를 추가했다
@@ -42,10 +44,29 @@ vuetify: {
   },
 ```
 
+- vue일 경우
+
+vue.config.js
+
+```jsx
+module.exports = {
+	css: {
+    loaderOptions: {
+      scss: {
+        sassOptions: {
+          prependData: '@import "@/assets/scss/variables.scss";',
+        },
+      },
+    },
+  },
+}
+
+//"sass-loader": "^10.0.0",
+```
+
 ### 아래와 같이 폴더를 생성 해 줄 것 (정해진건 아니지만 관리를 쉽게 하기 위해 나눔)
 
-<img src="https://user-images.githubusercontent.com/46176241/152669869-ef82a2fd-24b2-49a5-a563-65bafef7d67c.png" width="300"> 
-
+![스크린샷 2022-02-06 오후 12.31.39.png](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/e8d376c2-1c54-4e1f-9b1a-c9cc4c1bab92/스크린샷_2022-02-06_오후_12.31.39.png)
 
 ### 각 파일의 정의
 
@@ -138,3 +159,5 @@ alias: {
 ```
 
 이렇게 되면 import한 정의만 사용할 수 있기 때문에 다른  scss에 영향없이 독립적으로 사용할 수 있다
+
+vue의 경우  src/styles/ 아래에 작성해주는게 좋다 (설정이 잘 안된다)
