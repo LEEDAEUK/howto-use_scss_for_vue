@@ -44,7 +44,8 @@ vuetify: {
 
 ### 아래와 같이 폴더를 생성 해 줄 것 (정해진건 아니지만 관리를 쉽게 하기 위해 나눔)
 
-![스크린샷 2022-02-06 오후 12.31.39.png](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/e8d376c2-1c54-4e1f-9b1a-c9cc4c1bab92/스크린샷_2022-02-06_오후_12.31.39.png)
+<img src="https://user-images.githubusercontent.com/46176241/152669869-ef82a2fd-24b2-49a5-a563-65bafef7d67c.png" width="300"> 
+
 
 ### 각 파일의 정의
 
